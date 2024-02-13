@@ -18,7 +18,7 @@ export function LoginForm(props) {
     const navigate = useNavigate();
     
     const handleSignup = () => {
-        navigate('/Sidebar') 
+        navigate('/NBA') 
     } 
  
     const { switchToSignup } = useContext(AccountContext);

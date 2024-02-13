@@ -3,22 +3,80 @@ import React from "react"
 
 const CreatePost = () => {
   return (
-    <div className="flex flex-1">
-      <div className="common-container">
-        <div className="max-w-5xl flex-start gap-3 justify-start w-full">
+    <div className="relative pb-2 h-full justify-center items-center">
+    <div className="flex flex-col pb-5">
+      <div className="relative flex flex-col mb-7">
+        <div className="flex flex-col justify-center items-center">
           <img
-            src="data:image/png;base64,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"
-            width={150}
-            height={150}
-            alt="add"
+            className=" w-full h-370 2xl:h-510 shadow-lg object-cover"
+            src="https://source.unsplash.com/1600x900/?nature,photography,technology"
+            alt="user-pic"
           />
-          <h2 className="h3-bold md:h2-bold text-left w-full">Create Post</h2>
+          <img
+            className="rounded-full w-20 h-20 -mt-10 shadow-xl object-cover"
+            src={user.image}
+            alt="user-pic"
+          />
         </div>
-
-        {/* <PostForm action="Create" /> */}
+        <h1 className="font-bold text-3xl text-center mt-3">
+          {user.userName}
+        </h1>
+        <div className="absolute top-0 z-1 right-0 p-2">
+          {userId === User.googleId && (
+            <GoogleLogout
+              clientId={`${process.env.REACT_APP_GOOGLE_API_TOKEN}`}
+              render={(renderProps) => (
+                <button
+                  type="button"
+                  className=" bg-white p-2 rounded-full cursor-pointer outline-none shadow-md"
+                  onClick={renderProps.onClick}
+                  disabled={renderProps.disabled}
+                >
+                  <AiOutlineLogout color="red" fontSize={21} />
+                </button>
+              )}
+              onLogoutSuccess={logout}
+              cookiePolicy="single_host_origin"
+            />
+          )}
+        </div>
       </div>
+      <div className="text-center mb-7">
+        <button
+          type="button"
+          onClick={(e) => {
+            setText(e.target.textContent);
+            setActiveBtn('created');
+          }}
+          className={`${activeBtn === 'created' ? activeBtnStyles : notActiveBtnStyles}`}
+        >
+          Created
+        </button>
+        <button
+          type="button"
+          onClick={(e) => {
+            setText(e.target.textContent);
+            setActiveBtn('saved');
+          }}
+          className={`${activeBtn === 'saved' ? activeBtnStyles : notActiveBtnStyles}`}
+        >
+          Saved
+        </button>
+      </div>
+
+      <div className="px-2">
+        <MasonryLayout pins={pins} />
+      </div>
+
+      {pins?.length === 0 && (
+      <div className="flex justify-center font-bold items-center w-full text-1xl mt-2">
+        No Pins Found!
+      </div>
+      )}
     </div>
-  )
-}
+
+  </div>
+);
+};
 
 export default CreatePost

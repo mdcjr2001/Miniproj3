@@ -17,7 +17,7 @@ export function SignupForm(props) {
     const navigate = useNavigate();
     
     const handleLogin = () => {
-        navigate('/Sidebar') 
+        navigate('/NBA') 
     } 
 
 

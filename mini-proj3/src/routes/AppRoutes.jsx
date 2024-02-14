@@ -12,6 +12,7 @@ import Settings from "../pages/settings";
 import CreatePost from "../pages/createPost";
 import CBB from "../pages/feed/CBB/cbb";
 import { LoginForm } from "../components/accountBox/loginForm";
+import Login from "../components/login";
  
 function AppRoutes(props) {
     return (
@@ -28,6 +29,7 @@ function AppRoutes(props) {
             <Route path='/Createpost' element={<CreatePost {...props} />}/>
             <Route path='/CBB' element={<CBB {...props} />}/>
             <Route path='/LoginForm' element={<LoginForm {...props} />}/>
+            <Route path='/Login' element={<Login {...props}/>}/>
         </Routes>
     )
     
